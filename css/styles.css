@@ -1,0 +1,322 @@
+
+@import url('https://fonts.googleapis.com/css?family=Poppins:400,700,900');
+@import url("normalize.css");
+@import url("../fonts/webfonts/fontawesome-all.css");
+
+
+body {
+    font-family: 'Poppins', sans-serif;
+}
+
+header {
+    position:absolute;
+    top:1rem;
+    left:1rem;
+}
+
+h1 {
+    font-size:1rem;
+    text-transform:uppercase;
+    color:rgba(255,255,255,0.5);
+    user-select:none;
+}
+
+
+
+a {
+    color:rgba(0,0,0,1);
+    text-decoration:none;
+}
+
+a:visited {
+    color:rgba(0,0,0,0.9);
+}
+
+a:hover {
+    color:rgba(0,0,0,0.75);
+}
+
+.jumb-content {
+    
+    background-image:url("../images/header.png");
+    background-size:contain 100%;
+    background-position: center;
+    height:100vh;
+    display:grid;
+}
+
+.jumb h2 {
+    color:white;
+    align-self:end;
+    justify-self: center;
+    font-size:calc(1rem + 2vw);
+    text-transform:uppercase;
+    text-align:center;
+    user-select:none;  
+}
+
+.menu {
+    align-self:end;
+    justify-self: center;
+    margin:2rem 0;
+}
+
+.menu a {
+    margin-right:1rem;
+    color:white;
+    text-transform:uppercase;
+    font-size:1rem;
+    
+}
+
+.menu a:hover {
+    border-bottom: 5px solid rgba(27, 241,173,0.9);
+}
+
+
+
+section {
+    display:grid;
+    grid-template-columns:repeat(12,1fr);
+    justify-items: center;
+    grid-gap:1rem;
+    margin:5rem 0;
+    
+    
+}
+
+.top-section {
+    grid-column:span 12;
+    text-align:center;
+}
+
+.top-section-content {
+    width:40%;
+    margin:0 auto;
+}
+
+.background {
+    grid-column:span 5;
+    display:grid;
+    height:75vh;
+    
+    
+    background-image:linear-gradient(to right, rgba(27, 241,173,0.9), rgba(27,241,173,0.5)), url("../images/background-2.png");
+    background-size:85% 85%, contain;
+    background-position:top left, bottom right;
+    background-repeat: no-repeat;
+    
+}
+
+.background blockquote{
+    font-size:calc(1rem + 2vw);
+    margin:0;
+    width:60%;
+    justify-self:end;
+    align-self:end;
+}
+
+.our-ideology {
+    grid-column:span 7;
+    display:grid;
+}
+
+.subtitle {
+    font-weight:600;
+}
+
+.title h2 {
+    font-size:calc(2rem + 2vw);
+    line-height:1.1;
+    font-weight:700;
+    margin:0;
+    user-select:none;
+}
+
+.our-ideology {
+    width:90%;
+}
+
+.our-ideology-content {
+    justify-self:end;
+    align-self:center;
+}
+
+.win {
+    color:#e98457;
+}
+
+.meet-the-team .title, .our-featured-work .title {
+    grid-column:span 12;
+    width:70%;
+    margin:0 auto;
+    text-transform:uppercase;
+}
+
+.our-featured-work .title {
+    text-align:center;
+}
+
+.team-list {
+    grid-column:span 12;
+    width:95%;
+    margin:0 auto;
+    justify-self: stretch;
+    align-items:center;
+
+    display:grid;
+    grid-template-columns: repeat(3,1fr);
+}
+
+.team-member {
+    display:grid;
+    grid-template-columns:1fr 1fr;
+    padding:1rem 0;
+    transition: 0.5s background-color ease-in-out;
+}
+
+.team-member:hover {
+    background-color:rgba(27, 241,173,0.9);
+    color:white;
+
+}
+
+.team-member img {
+    grid-row:span 3;
+    justify-self:center;
+    width:10vw;
+    
+}
+
+.team-member h3, .team-member p, .team-member-social-bar {
+    grid-column:2;
+    margin:0;
+} 
+
+.team-member i {
+    
+    margin-right:1rem;
+}
+
+.team-member i:hover {
+    color:rgba(0,0,0,0.25);
+}
+
+/* SLIDER */
+
+.slide {
+    background-size:cover;
+    background-repeat:no-repeat;
+    background-position:center;
+}
+
+.slide-1 {
+    background-image:url("../images/Layer 6.png");
+    
+}
+
+.slide-2 {
+    background-image:url("../images/Layer 7.png");
+}
+
+.slide-3 {
+    background-image:url("../images/Layer 8.png");
+    
+}
+
+.slide-4 {
+    background-image:url("../images/Layer 6.png");
+    
+}
+
+.slide-5 {
+    background-image:url("../images/Layer 7.png");
+    
+}
+
+.slide-6 {
+    background-image:url("../images/Layer 8.png");
+    
+}
+
+.slider h4 {
+    font-size: 1.414rem;
+    color:white;
+    text-transform:uppercase;
+    margin:0;
+}
+
+.slider-title {
+    margin: 0 0 1rem 1rem;
+}
+
+.slider-title .subtitle {
+    font-size:0.707rem;
+    text-align:left;
+    color:white;
+}
+
+footer {
+    display:grid;
+    grid-template-columns:repeat(12,1fr);
+    align-items:center;
+    justify-items:center;
+}
+
+.general-info-block {
+    grid-column:span 8;
+    width:75%;
+    margin:0 auto;
+}
+
+.contacts-block {
+    grid-column:span 4;
+    align-self:start;
+    
+}
+
+footer h1 {
+    color:black;
+    padding:0.5rem 1rem;
+}
+
+footer .logo {
+    border: 1px solid black;
+    float:left;
+}
+
+.call-us {
+    text-transform:uppercase;
+    font-size:1.414rem;
+    padding:1rem 0;
+    margin-left:1rem;
+    float:left;
+    
+}
+
+.phone-color {
+    color:rgba(27, 241,173,0.9);
+}
+
+footer .menu {
+    float:left;
+}
+
+footer .menu a {
+    color:black;
+}
+
+.contacts-block {
+    font-size:0.717rem;
+    text-transform:uppercase;
+}
+
+.social-bar-footer {
+    margin:1rem 0;
+}
+
+.social-bar-footer i{
+    font-size:1.414rem;
+    margin-right: 0.5rem;
+
+}

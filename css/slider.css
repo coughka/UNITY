@@ -31,7 +31,7 @@
   .slides > div {
     flex-shrink: 0;
     width: 30vw;
-    height: 300px;
+    height: 50vh;
     margin-right:1rem;
     border-radius: 10px;
     transform-origin: center center;
@@ -80,4 +80,16 @@
   position:relative;
   bottom:33vh;
   left:-45vw;
+}
+
+@media screen and (max-width: 425px) {
+
+  .slides > div {
+      width:100vw;
+  }
+
+  .prev, .nxt {
+    display:none;
+  }
+
 }

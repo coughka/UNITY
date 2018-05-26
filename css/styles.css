@@ -185,6 +185,7 @@ section {
     grid-row:span 3;
     justify-self:center;
     width:10vw;
+    min-width:3.5rem;
     
 }
 
@@ -319,4 +320,66 @@ footer .menu a {
     font-size:1.414rem;
     margin-right: 0.5rem;
 
+}
+
+@media screen and (max-width: 768px) {
+
+    .background, .our-ideology, .general-info-block, .contacts-block {
+        grid-column:span 12;
+    }
+
+    .general-info-block, .contacts-block {
+        width:95%;
+        margin:0 auto;
+    }
+
+    .top-section-content, .our-ideology, .meet-the-team .title {
+        width:75%;
+        text-align:center;
+    }
+
+    .our-ideology {
+        grid-row:2;
+        text-align:center;
+    }
+    
+    .background blockquote {
+        align-self:center;
+    }
+
+    .team-member {
+        grid-column:span 3;
+    }
+  }
+
+  @media screen and (max-width: 425px) {
+    .top-section-content, .our-ideology, .meet-the-team .title, .our-featured-work .title {
+        width:95%;
+    }
+
+    .call-us {
+        font-size:1rem;
+    }
+
+    footer .menu a:last-child, footer .menu a:nth-child(4), .jumb-content .menu a:first-child, .jumb-content .menu a:nth-child(4), .jumb-content .menu a:nth-child(5), .prev, .nxt {
+        display:none;
+    }
+
+    .social-bar-footer, .call-us-now, .mail {
+        text-align: center;
+    }
+}
+
+@media screen and (max-width: 375px) {
+    .logo h1{
+        padding:0.25rem 0.5rem;
+    }
+
+    .call-us {
+        margin-left:0.5rem;
+    }
+
+    footer .menu a:nth-child(5) {
+        display:none;
+    }
 }
